@@ -1,0 +1,64 @@
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+.page-header {
+  text-align: center; // i like P
+  margin-bottom: 3rem;
+
+  h1 {
+    font-size: 2.5rem;
+    color: #5d3f82;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    color: #8c73aa; 
+    font-weight: 400;
+  }
+}
+
+.page-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+
+  @media (max-width: 850px) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.column {
+  flex: 1;
+
+  &.left-column {
+    flex: 1.4; 
+  }
+
+  &.right-column {
+    flex: 1;
+  }
+}
+
+.column-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(93, 63, 130, 0.05); 
+  border: 1px solid #eae2f3;
+  min-height: 450px;
+}
+
+.column-title {
+  font-size: 1.4rem;
+  color: #6a4c93;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  border-bottom: 2px solid #f0e6fc;
+  padding-bottom: 0.75rem;
+}
